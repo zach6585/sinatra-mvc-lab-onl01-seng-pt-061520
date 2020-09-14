@@ -4,8 +4,8 @@ class PigLatinizer
     al = words.split(' ')
     bc = []
     vs = ['a','e','i','o','u','A','E','I','O','U', 'y','Y']
-    i = 1
     al.each do |a| 
+      i = 0
       if vs.include?(a[0]) && a[0] != 'y' && a[0] != 'Y'
       bc << a + "way" 
       else 
